@@ -6,4 +6,5 @@ export const colors = {
     whisper: '#E7E7E7',
     whiteSmoke: '#F3F3F3',
     Alabaster: '#FAFAFA',
+    red: 'red'
 }
