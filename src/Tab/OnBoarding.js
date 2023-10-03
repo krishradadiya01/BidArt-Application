@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, {useCallback, useRef, useState} from 'react';
-import {responsiveFontSize} from 'react-native-responsive-dimensions';
 import {styles} from '../themes';
 import {OnBoardingData} from '../api/constant';
 import images from '../assets/images/index';
@@ -19,14 +18,14 @@ import { OnBoardingToken, StorageValueGet } from '../utils/asyncStrorage';
 const OnBoarding = props => {
   const [onBoarding, setOnBoarding] = useState(0);
   const slideRef = useRef(null);
-
+  
   const _ViewableItemsChanged = useCallback(({viewableItems}) => {
     setOnBoarding(viewableItems[0]?.index);
   }, []);
 
   const onPressRightArrow = () => {
     if (onBoarding === 2) {
-      props.navigation.navigate('HomeScreen');
+      props.navigation.navigate('AuthNavigation');
       OnBoardingToken(true)
     } else {
       slideRef.current._listRef._scrollRef.scrollTo({
@@ -36,7 +35,6 @@ const OnBoarding = props => {
   };
 
   const NextIndicator = () => {
-    // console.log('onBoarding====>', onBoarding);
     switch (onBoarding) {
       case 1:
         return <Image source={images.Next} style={localStyles.ImgStyle} />;

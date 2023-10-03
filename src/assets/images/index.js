@@ -7,4 +7,7 @@ export default {
   Next: require('../images/Next.png'),
   Next1: require('../images/Next1.png'),
   Start: require('../images/Start.png'),
+  Google: require('../images/Google.png'),
+  FaceBook: require('../images/FaceBook.png'),
+  Apple: require('../images/Apple.png')
 };

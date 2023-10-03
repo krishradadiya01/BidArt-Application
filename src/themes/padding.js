@@ -8,6 +8,9 @@ export default StyleSheet.create({
   p15: {
     padding: moderateScale(15),
   },
+  pl20: {
+    padding: moderateScale(20),
+  },
   p20: {
     padding: moderateScale(20),
   },

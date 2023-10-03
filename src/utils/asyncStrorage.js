@@ -3,7 +3,6 @@ import { ACCESS_TOKEN, ON_BOARDING } from "./keys"
 
 const StorageValueGet = async () => {
     let asyncData = await AsyncStorage.multiGet([ON_BOARDING, ACCESS_TOKEN])
-    console.log('asybc', asyncData)
     const onBoardingValue = !!asyncData[0][1]
      ? asyncData[0][1]
      : false;

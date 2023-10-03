@@ -24,7 +24,7 @@ const Splash = props => {
         if (!!accessValue) {
           props.navigation.navigate('HomeScreen');
         } else if (!!onBoardingValue) {
-          props.navigation.navigate('Discover');
+          props.navigation.navigate('AuthNavigation');
         } else {
           props.navigation.navigate('OnBoarding');
         }

@@ -31,6 +31,9 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
+  flexStart: {
+    justifyContent: 'flex-start'
+  },
   flexColumn: {
     flexDirection: 'column',
   },
